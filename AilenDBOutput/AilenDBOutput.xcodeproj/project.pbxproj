@@ -71,8 +71,8 @@
 		A658212C20B3029C00D04038 /* AilenDBOutput */ = {
 			isa = PBXGroup;
 			children = (
-				A658212D20B3029C00D04038 /* AilenDBOutput.h */,
-				A658212E20B3029C00D04038 /* Info.plist */,
+				A658214520B303B500D04038 /* Code */,
+				A658214420B303A600D04038 /* Supporting Files */,
 			);
 			path = AilenDBOutput;
 			sourceTree = "<group>";
@@ -84,6 +84,22 @@
 				A658213A20B3029D00D04038 /* Info.plist */,
 			);
 			path = AilenDBOutputTests;
+			sourceTree = "<group>";
+		};
+		A658214420B303A600D04038 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A658212D20B3029C00D04038 /* AilenDBOutput.h */,
+				A658212E20B3029C00D04038 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A658214520B303B500D04038 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Code;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,7 +362,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = AilenDBOutput/Info.plist;
+				INFOPLIST_FILE = "AilenDBOutput/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -371,7 +387,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = AilenDBOutput/Info.plist;
+				INFOPLIST_FILE = "AilenDBOutput/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
