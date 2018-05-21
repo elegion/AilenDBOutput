@@ -11,6 +11,32 @@
 		A658213420B3029D00D04038 /* AilenDBOutput.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A658212A20B3029C00D04038 /* AilenDBOutput.framework */; };
 		A658213920B3029D00D04038 /* AilenDBOutputTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A658213820B3029D00D04038 /* AilenDBOutputTests.swift */; };
 		A658213B20B3029D00D04038 /* AilenDBOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = A658212D20B3029C00D04038 /* AilenDBOutput.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A6D0730620B3114A004D8802 /* AilenPersistentStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D072F920B31149004D8802 /* AilenPersistentStorage.swift */; };
+		A6D0730720B3114A004D8802 /* AilenPersistentStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D072F920B31149004D8802 /* AilenPersistentStorage.swift */; };
+		A6D0730820B3114A004D8802 /* ELNTag+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D072FA20B31149004D8802 /* ELNTag+CoreDataClass.swift */; };
+		A6D0730920B3114A004D8802 /* ELNTag+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D072FA20B31149004D8802 /* ELNTag+CoreDataClass.swift */; };
+		A6D0730A20B3114A004D8802 /* Countdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D072FB20B31149004D8802 /* Countdown.swift */; };
+		A6D0730B20B3114A004D8802 /* Countdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D072FB20B31149004D8802 /* Countdown.swift */; };
+		A6D0730C20B3114A004D8802 /* ELNToken+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D072FC20B31149004D8802 /* ELNToken+CoreDataProperties.swift */; };
+		A6D0730D20B3114A004D8802 /* ELNToken+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D072FC20B31149004D8802 /* ELNToken+CoreDataProperties.swift */; };
+		A6D0730E20B3114A004D8802 /* FilterStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D072FD20B31149004D8802 /* FilterStore.swift */; };
+		A6D0730F20B3114A004D8802 /* FilterStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D072FD20B31149004D8802 /* FilterStore.swift */; };
+		A6D0731020B3114A004D8802 /* ELNTag+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D072FE20B31149004D8802 /* ELNTag+CoreDataProperties.swift */; };
+		A6D0731120B3114A004D8802 /* ELNTag+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D072FE20B31149004D8802 /* ELNTag+CoreDataProperties.swift */; };
+		A6D0731220B3114A004D8802 /* ELNMessage+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D072FF20B31149004D8802 /* ELNMessage+CoreDataClass.swift */; };
+		A6D0731320B3114A004D8802 /* ELNMessage+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D072FF20B31149004D8802 /* ELNMessage+CoreDataClass.swift */; };
+		A6D0731420B3114A004D8802 /* AilenPersistentCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D0730020B31149004D8802 /* AilenPersistentCore.swift */; };
+		A6D0731520B3114A004D8802 /* AilenPersistentCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D0730020B31149004D8802 /* AilenPersistentCore.swift */; };
+		A6D0731620B3114A004D8802 /* CoreDataOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D0730120B31149004D8802 /* CoreDataOutput.swift */; };
+		A6D0731720B3114A004D8802 /* CoreDataOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D0730120B31149004D8802 /* CoreDataOutput.swift */; };
+		A6D0731820B3114A004D8802 /* DefaultDataConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D0730220B31149004D8802 /* DefaultDataConverter.swift */; };
+		A6D0731920B3114A004D8802 /* DefaultDataConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D0730220B31149004D8802 /* DefaultDataConverter.swift */; };
+		A6D0731A20B3114A004D8802 /* ELNMessage+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D0730320B3114A004D8802 /* ELNMessage+CoreDataProperties.swift */; };
+		A6D0731B20B3114A004D8802 /* ELNMessage+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D0730320B3114A004D8802 /* ELNMessage+CoreDataProperties.swift */; };
+		A6D0731C20B3114A004D8802 /* ELNToken+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D0730420B3114A004D8802 /* ELNToken+CoreDataClass.swift */; };
+		A6D0731D20B3114A004D8802 /* ELNToken+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D0730420B3114A004D8802 /* ELNToken+CoreDataClass.swift */; };
+		A6D0731E20B3114A004D8802 /* CoreDataOutputProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D0730520B3114A004D8802 /* CoreDataOutputProtocols.swift */; };
+		A6D0731F20B3114A004D8802 /* CoreDataOutputProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D0730520B3114A004D8802 /* CoreDataOutputProtocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +58,19 @@
 		A658213320B3029D00D04038 /* AilenDBOutputTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AilenDBOutputTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A658213820B3029D00D04038 /* AilenDBOutputTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AilenDBOutputTests.swift; sourceTree = "<group>"; };
 		A658213A20B3029D00D04038 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6D072F920B31149004D8802 /* AilenPersistentStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AilenPersistentStorage.swift; sourceTree = "<group>"; };
+		A6D072FA20B31149004D8802 /* ELNTag+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ELNTag+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A6D072FB20B31149004D8802 /* Countdown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Countdown.swift; sourceTree = "<group>"; };
+		A6D072FC20B31149004D8802 /* ELNToken+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ELNToken+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A6D072FD20B31149004D8802 /* FilterStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterStore.swift; sourceTree = "<group>"; };
+		A6D072FE20B31149004D8802 /* ELNTag+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ELNTag+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A6D072FF20B31149004D8802 /* ELNMessage+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ELNMessage+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A6D0730020B31149004D8802 /* AilenPersistentCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AilenPersistentCore.swift; sourceTree = "<group>"; };
+		A6D0730120B31149004D8802 /* CoreDataOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataOutput.swift; sourceTree = "<group>"; };
+		A6D0730220B31149004D8802 /* DefaultDataConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultDataConverter.swift; sourceTree = "<group>"; };
+		A6D0730320B3114A004D8802 /* ELNMessage+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ELNMessage+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A6D0730420B3114A004D8802 /* ELNToken+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ELNToken+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A6D0730520B3114A004D8802 /* CoreDataOutputProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataOutputProtocols.swift; sourceTree = "<group>"; };
 		C97139D0A0DC91851F838411 /* Pods_AilenDBOutput.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AilenDBOutput.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -114,6 +153,19 @@
 		A658214520B303B500D04038 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				A6D0730020B31149004D8802 /* AilenPersistentCore.swift */,
+				A6D072F920B31149004D8802 /* AilenPersistentStorage.swift */,
+				A6D0730520B3114A004D8802 /* CoreDataOutputProtocols.swift */,
+				A6D072FB20B31149004D8802 /* Countdown.swift */,
+				A6D0730220B31149004D8802 /* DefaultDataConverter.swift */,
+				A6D0730120B31149004D8802 /* CoreDataOutput.swift */,
+				A6D072FF20B31149004D8802 /* ELNMessage+CoreDataClass.swift */,
+				A6D0730320B3114A004D8802 /* ELNMessage+CoreDataProperties.swift */,
+				A6D072FA20B31149004D8802 /* ELNTag+CoreDataClass.swift */,
+				A6D072FE20B31149004D8802 /* ELNTag+CoreDataProperties.swift */,
+				A6D0730420B3114A004D8802 /* ELNToken+CoreDataClass.swift */,
+				A6D072FC20B31149004D8802 /* ELNToken+CoreDataProperties.swift */,
+				A6D072FD20B31149004D8802 /* FilterStore.swift */,
 			);
 			name = Code;
 			path = ../../Source;
@@ -190,6 +242,7 @@
 				TargetAttributes = {
 					A658212920B3029C00D04038 = {
 						CreatedOnToolsVersion = 9.3.1;
+						LastSwiftMigration = 0930;
 					};
 					A658213220B3029D00D04038 = {
 						CreatedOnToolsVersion = 9.3.1;
@@ -257,6 +310,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6D0730820B3114A004D8802 /* ELNTag+CoreDataClass.swift in Sources */,
+				A6D0730C20B3114A004D8802 /* ELNToken+CoreDataProperties.swift in Sources */,
+				A6D0731E20B3114A004D8802 /* CoreDataOutputProtocols.swift in Sources */,
+				A6D0731820B3114A004D8802 /* DefaultDataConverter.swift in Sources */,
+				A6D0731020B3114A004D8802 /* ELNTag+CoreDataProperties.swift in Sources */,
+				A6D0730E20B3114A004D8802 /* FilterStore.swift in Sources */,
+				A6D0731A20B3114A004D8802 /* ELNMessage+CoreDataProperties.swift in Sources */,
+				A6D0731620B3114A004D8802 /* CoreDataOutput.swift in Sources */,
+				A6D0731C20B3114A004D8802 /* ELNToken+CoreDataClass.swift in Sources */,
+				A6D0730620B3114A004D8802 /* AilenPersistentStorage.swift in Sources */,
+				A6D0731220B3114A004D8802 /* ELNMessage+CoreDataClass.swift in Sources */,
+				A6D0730A20B3114A004D8802 /* Countdown.swift in Sources */,
+				A6D0731420B3114A004D8802 /* AilenPersistentCore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,7 +330,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6D0730720B3114A004D8802 /* AilenPersistentStorage.swift in Sources */,
+				A6D0731320B3114A004D8802 /* ELNMessage+CoreDataClass.swift in Sources */,
+				A6D0731520B3114A004D8802 /* AilenPersistentCore.swift in Sources */,
+				A6D0731920B3114A004D8802 /* DefaultDataConverter.swift in Sources */,
+				A6D0731720B3114A004D8802 /* CoreDataOutput.swift in Sources */,
 				A658213920B3029D00D04038 /* AilenDBOutputTests.swift in Sources */,
+				A6D0731120B3114A004D8802 /* ELNTag+CoreDataProperties.swift in Sources */,
+				A6D0730920B3114A004D8802 /* ELNTag+CoreDataClass.swift in Sources */,
+				A6D0730F20B3114A004D8802 /* FilterStore.swift in Sources */,
+				A6D0731B20B3114A004D8802 /* ELNMessage+CoreDataProperties.swift in Sources */,
+				A6D0730D20B3114A004D8802 /* ELNToken+CoreDataProperties.swift in Sources */,
+				A6D0731F20B3114A004D8802 /* CoreDataOutputProtocols.swift in Sources */,
+				A6D0731D20B3114A004D8802 /* ELNToken+CoreDataClass.swift in Sources */,
+				A6D0730B20B3114A004D8802 /* Countdown.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +482,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 827D952AEAFE10049316332D /* Pods-AilenDBOutput.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -421,6 +501,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.e-legion.AilenDBOutput";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -430,6 +511,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2F828B22A059E9F9F682E0B0 /* Pods-AilenDBOutput.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -456,6 +538,7 @@
 		A658214220B3029D00D04038 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 96GT47C53G;
 				INFOPLIST_FILE = AilenDBOutputTests/Info.plist;
@@ -474,6 +557,7 @@
 		A658214320B3029D00D04038 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 96GT47C53G;
 				INFOPLIST_FILE = AilenDBOutputTests/Info.plist;
