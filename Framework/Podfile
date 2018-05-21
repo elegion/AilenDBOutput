@@ -1,17 +1,11 @@
 inhibit_all_warnings!
 
-platform :ios, '9.3'
+platform :ios, '9.0'
 
-target 'iOSDebugPanel_ios-logger' do
+source 'https://github.com/elegion/ios-podspecs.git'
+
+target 'AilenDBOutput' do
 	use_frameworks!
 
-	pod 'iOSDebugPanel', :git => 'git@gitlab.e-legion.com:e-legion-ios/ios-debug-panel.git', :branch => 'develop'
-	pod 'ios-logger', :git => 'git@gitlab.e-legion.com:e-legion-ios/ios-logger.git', :branch => 'feature/development'
-end
-
-target 'iOSDebugPanelLogerExampleTarget' do
-	use_frameworks!
-
-	pod 'iOSDebugPanel', :git => 'git@gitlab.e-legion.com:e-legion-ios/ios-debug-panel.git', :branch => 'develop'
-	pod 'ios-logger', :git => 'git@gitlab.e-legion.com:e-legion-ios/ios-logger.git', :branch => 'feature/development'
+	pod 'Ailen', '0.0.1.alpha.3'
 end
