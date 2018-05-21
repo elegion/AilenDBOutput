@@ -1,0 +1,17 @@
+inhibit_all_warnings!
+
+platform :ios, '9.3'
+
+target 'iOSDebugPanel_ios-logger' do
+	use_frameworks!
+
+	pod 'iOSDebugPanel', :git => 'git@gitlab.e-legion.com:e-legion-ios/ios-debug-panel.git', :branch => 'develop'
+	pod 'ios-logger', :git => 'git@gitlab.e-legion.com:e-legion-ios/ios-logger.git', :branch => 'feature/development'
+end
+
+target 'iOSDebugPanelLogerExampleTarget' do
+	use_frameworks!
+
+	pod 'iOSDebugPanel', :git => 'git@gitlab.e-legion.com:e-legion-ios/ios-debug-panel.git', :branch => 'develop'
+	pod 'ios-logger', :git => 'git@gitlab.e-legion.com:e-legion-ios/ios-logger.git', :branch => 'feature/development'
+end
