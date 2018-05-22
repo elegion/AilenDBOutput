@@ -8,15 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		2C943B28D7FA958B57D9C640E65B1CF1 /* ConsoleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839361CD11569B90AFE706C05C161CB3 /* ConsoleOutput.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		37FEC70507FA56B20690BE33DEB0C542 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		43F92780F69A8B664A43CF4F8E94372A /* Qos.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA20F72724A2E4B556387FA2ABCC34CE /* Qos.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		5003669513EAE5B4308E5D7CDA363CD9 /* DefaultOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5A88D654E98F3CB4D64EF75E29AA29 /* DefaultOutput.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		598A4590B4DF1181E78BD2E66101B74C /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0229B944D057D74BADD29C7B6E5FCC95 /* Token.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		5B672E53163B1B0462ED063E2C6321EC /* Pods-AilenDBOutput-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B5F8C8A2F991330BE3CA6ED860C7C55 /* Pods-AilenDBOutput-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B672E53163B1B0462ED063E2C6321EC /* Pods-AilenDBOutput-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 072328FC69A5CF835FC1078BBDCCE4E1 /* Pods-AilenDBOutput-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		64332BC1FEEF6B13C54DAD4B1847F9CB /* DebugProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC080B6D5DEAD8FE391CBAA2C5042F7 /* DebugProcessor.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		678D2216EAE53BA751E05CF2F40B4F3A /* Pods-AilenDBOutput-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D670687CDBA5A537DE57459BFDF45CFA /* Pods-AilenDBOutput-dummy.m */; };
+		678D2216EAE53BA751E05CF2F40B4F3A /* Pods-AilenDBOutput-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E00BB4096C3DFFC508AD4DF57647159 /* Pods-AilenDBOutput-dummy.m */; };
 		7A5C58751945F0190BED2C61183B90C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		7A6325BD13F6F5FEB6A15F93A190626D /* Pods-AilenDBOutputTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F43D648FACF22E0E39D5512C09C9747C /* Pods-AilenDBOutputTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7B3A6D2FD9D5F23E7B18B08973276F2B /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90973BF492768EE0FFAB5BF2C0C8FDFE /* Protocols.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		8976BE998821AFB91FC62A430F652777 /* Processor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7791854B244E01FC5FFDE3556F513FE2 /* Processor.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B11396634BE6100DB3A78ED9F3BF6451 /* Pods-AilenDBOutputTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 73CE86BA084619BE5D214B658985DDED /* Pods-AilenDBOutputTests-dummy.m */; };
 		B7A25CD64DEA151DE29C8CA9437021EC /* Ailen-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7484E7788D0046AFF63421081B63AF09 /* Ailen-dummy.m */; };
 		B9499925F21A85078D827669668F664C /* Ailen-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 406B21B4F286300FB1066AF40178A074 /* Ailen-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E0CF116E0DC2EBF19985E531C6174EE8 /* Ailen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81BF5C3FF7AABA6A52D91818B70F6A0 /* Ailen.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -31,39 +34,65 @@
 			remoteGlobalIDString = 22BE81EF9EE70A821ED933E1D98DC575;
 			remoteInfo = Ailen;
 		};
+		C37F14F9ABCF1DF9EC67DEF8C961E3A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22BE81EF9EE70A821ED933E1D98DC575;
+			remoteInfo = Ailen;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0152CF079D5ECD718ED3225209E2E4CE /* Pods-AilenDBOutput-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AilenDBOutput-acknowledgements.plist"; sourceTree = "<group>"; };
 		0229B944D057D74BADD29C7B6E5FCC95 /* Token.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Token.swift; path = Source/Token.swift; sourceTree = "<group>"; };
+		072328FC69A5CF835FC1078BBDCCE4E1 /* Pods-AilenDBOutput-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AilenDBOutput-umbrella.h"; sourceTree = "<group>"; };
+		0FD89E5D8324D35706FF893D7E00557A /* Pods-AilenDBOutput-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AilenDBOutput-acknowledgements.plist"; sourceTree = "<group>"; };
 		115BAF25CE59631881895ABB70CE93BC /* Ailen.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Ailen.modulemap; sourceTree = "<group>"; };
+		15E86760B080E25DC999B3E9793C298A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AEEC5B3EBD7DE3EF03D54DAC64D34A7 /* Pods-AilenDBOutput.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AilenDBOutput.modulemap"; sourceTree = "<group>"; };
+		20FD52B1437084DF6C984EC890A5C6E4 /* Pods-AilenDBOutputTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AilenDBOutputTests.modulemap"; sourceTree = "<group>"; };
+		259B33318979F9BD6B3B4FE5F9B837B9 /* Pods-AilenDBOutputTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AilenDBOutputTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		35297A24D6238F46A3DD1F5E8B578589 /* Pods-AilenDBOutput.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AilenDBOutput.debug.xcconfig"; sourceTree = "<group>"; };
 		3B41DE4A8AFDAF8573794D7863E2730D /* Ailen.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Ailen.xcconfig; sourceTree = "<group>"; };
-		3F97E631D268ABDCE067329C5BC6D19D /* Pods-AilenDBOutput.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AilenDBOutput.release.xcconfig"; sourceTree = "<group>"; };
+		3E00BB4096C3DFFC508AD4DF57647159 /* Pods-AilenDBOutput-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AilenDBOutput-dummy.m"; sourceTree = "<group>"; };
+		3F19A6F7588177D60C00472B1F25B0FC /* Pods-AilenDBOutput.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AilenDBOutput.release.xcconfig"; sourceTree = "<group>"; };
 		406B21B4F286300FB1066AF40178A074 /* Ailen-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Ailen-umbrella.h"; sourceTree = "<group>"; };
+		418FAA28E2A9E738BB3E1F9EFB7CE763 /* Pods-AilenDBOutputTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AilenDBOutputTests-resources.sh"; sourceTree = "<group>"; };
+		55E79D1B41898EE23911B03150C6DCA0 /* Pods_AilenDBOutputTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AilenDBOutputTests.framework; path = "Pods-AilenDBOutputTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		668B2AE51882CA9099272802A55AC29F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6B5F8C8A2F991330BE3CA6ED860C7C55 /* Pods-AilenDBOutput-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AilenDBOutput-umbrella.h"; sourceTree = "<group>"; };
+		6C6196B76A83267FBF884775B013561A /* Pods-AilenDBOutputTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AilenDBOutputTests-frameworks.sh"; sourceTree = "<group>"; };
+		73CE86BA084619BE5D214B658985DDED /* Pods-AilenDBOutputTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AilenDBOutputTests-dummy.m"; sourceTree = "<group>"; };
 		7484E7788D0046AFF63421081B63AF09 /* Ailen-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Ailen-dummy.m"; sourceTree = "<group>"; };
 		7791854B244E01FC5FFDE3556F513FE2 /* Processor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Processor.swift; path = Source/Processor.swift; sourceTree = "<group>"; };
 		839361CD11569B90AFE706C05C161CB3 /* ConsoleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConsoleOutput.swift; path = Source/ConsoleOutput.swift; sourceTree = "<group>"; };
+		86248B27D39CC139A7CDBB6B2EDF5F22 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8729A08BA107EDE4CEC2A10E69B4DD6E /* Pods-AilenDBOutput-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AilenDBOutput-resources.sh"; sourceTree = "<group>"; };
 		8A5A88D654E98F3CB4D64EF75E29AA29 /* DefaultOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultOutput.swift; path = Source/DefaultOutput.swift; sourceTree = "<group>"; };
+		8FD31B8D0986AD6D6DBFCCD32081F494 /* Pods-AilenDBOutputTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AilenDBOutputTests.debug.xcconfig"; sourceTree = "<group>"; };
 		90973BF492768EE0FFAB5BF2C0C8FDFE /* Protocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protocols.swift; path = Source/Protocols.swift; sourceTree = "<group>"; };
+		9399FFAEB4CD858AFE843AA36A78128B /* Pods-AilenDBOutputTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AilenDBOutputTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		96C39F2449CA9EA26999AA48E0479740 /* Ailen-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Ailen-prefix.pch"; sourceTree = "<group>"; };
-		97EAF3E5EECAFB1C8CB947D3C8796EB8 /* Pods-AilenDBOutput.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AilenDBOutput.debug.xcconfig"; sourceTree = "<group>"; };
+		9E1CBDFD1647D9EDE3CB2D93DD536365 /* Ailen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Ailen.framework; path = Ailen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B76CBB29361D5712116DE811C1116546 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA20F72724A2E4B556387FA2ABCC34CE /* Qos.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Qos.swift; path = Source/Qos.swift; sourceTree = "<group>"; };
-		C68DFB0E180A846FFF14C391037E9EBA /* Pods-AilenDBOutput-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AilenDBOutput-resources.sh"; sourceTree = "<group>"; };
-		D670687CDBA5A537DE57459BFDF45CFA /* Pods-AilenDBOutput-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AilenDBOutput-dummy.m"; sourceTree = "<group>"; };
+		D6D129C7CFB0ED25D8DFE5524F16BE0C /* Pods-AilenDBOutputTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AilenDBOutputTests.release.xcconfig"; sourceTree = "<group>"; };
 		D81BF5C3FF7AABA6A52D91818B70F6A0 /* Ailen.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Ailen.swift; path = Source/Ailen.swift; sourceTree = "<group>"; };
+		DC25D99242720749BB7567585ED02007 /* Pods_AilenDBOutput.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AilenDBOutput.framework; path = "Pods-AilenDBOutput.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCC080B6D5DEAD8FE391CBAA2C5042F7 /* DebugProcessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DebugProcessor.swift; path = Source/DebugProcessor.swift; sourceTree = "<group>"; };
-		DD85F923F38C1133111DC64EBB43DE76 /* Pods_AilenDBOutput.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AilenDBOutput.framework; path = "Pods-AilenDBOutput.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC98CB42A8D4156FC5249FB7228642E7 /* Pods-AilenDBOutput.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AilenDBOutput.modulemap"; sourceTree = "<group>"; };
-		F188A28A27F7ED583FA15C882F8A5BDC /* Pods-AilenDBOutput-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AilenDBOutput-acknowledgements.markdown"; sourceTree = "<group>"; };
-		FE17A443B8F8CCA706F7D34580248A7E /* Ailen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Ailen.framework; path = Ailen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F43D648FACF22E0E39D5512C09C9747C /* Pods-AilenDBOutputTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AilenDBOutputTests-umbrella.h"; sourceTree = "<group>"; };
+		F64F23A84F8A3C8B0B08F5D551D8C9FF /* Pods-AilenDBOutput-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AilenDBOutput-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		26B1A186C256301F93A4CB14524E21C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37FEC70507FA56B20690BE33DEB0C542 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		724F69C70B237AF561B8F3DBBA05E141 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -83,13 +112,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		08A15AD64BDB02E09C67E429C7A9AEFF /* Products */ = {
+		16712295CDE8BC220A591464D5A1F4D7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FE17A443B8F8CCA706F7D34580248A7E /* Ailen.framework */,
-				DD85F923F38C1133111DC64EBB43DE76 /* Pods_AilenDBOutput.framework */,
+				9E1CBDFD1647D9EDE3CB2D93DD536365 /* Ailen.framework */,
+				DC25D99242720749BB7567585ED02007 /* Pods_AilenDBOutput.framework */,
+				55E79D1B41898EE23911B03150C6DCA0 /* Pods_AilenDBOutputTests.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		1B378B1F6F5922BF0B342ED938C753ED /* Pods-AilenDBOutputTests */ = {
+			isa = PBXGroup;
+			children = (
+				15E86760B080E25DC999B3E9793C298A /* Info.plist */,
+				20FD52B1437084DF6C984EC890A5C6E4 /* Pods-AilenDBOutputTests.modulemap */,
+				9399FFAEB4CD858AFE843AA36A78128B /* Pods-AilenDBOutputTests-acknowledgements.markdown */,
+				259B33318979F9BD6B3B4FE5F9B837B9 /* Pods-AilenDBOutputTests-acknowledgements.plist */,
+				73CE86BA084619BE5D214B658985DDED /* Pods-AilenDBOutputTests-dummy.m */,
+				6C6196B76A83267FBF884775B013561A /* Pods-AilenDBOutputTests-frameworks.sh */,
+				418FAA28E2A9E738BB3E1F9EFB7CE763 /* Pods-AilenDBOutputTests-resources.sh */,
+				F43D648FACF22E0E39D5512C09C9747C /* Pods-AilenDBOutputTests-umbrella.h */,
+				8FD31B8D0986AD6D6DBFCCD32081F494 /* Pods-AilenDBOutputTests.debug.xcconfig */,
+				D6D129C7CFB0ED25D8DFE5524F16BE0C /* Pods-AilenDBOutputTests.release.xcconfig */,
+			);
+			name = "Pods-AilenDBOutputTests";
+			path = "Target Support Files/Pods-AilenDBOutputTests";
+			sourceTree = "<group>";
+		};
+		1FAC3A9BCA86A669CF261E00DABEC344 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5D4C1AA7ACBCA3B9BD4CCD80FBECAF59 /* Pods-AilenDBOutput */,
+				1B378B1F6F5922BF0B342ED938C753ED /* Pods-AilenDBOutputTests */,
+			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		4CF46F829E7518F283EB1BF8E19E352A /* Support Files */ = {
@@ -106,29 +163,21 @@
 			path = "../Target Support Files/Ailen";
 			sourceTree = "<group>";
 		};
-		4F7CB43711CE627FA756388C613558D0 /* Pods-AilenDBOutput */ = {
+		5D4C1AA7ACBCA3B9BD4CCD80FBECAF59 /* Pods-AilenDBOutput */ = {
 			isa = PBXGroup;
 			children = (
-				668B2AE51882CA9099272802A55AC29F /* Info.plist */,
-				EC98CB42A8D4156FC5249FB7228642E7 /* Pods-AilenDBOutput.modulemap */,
-				F188A28A27F7ED583FA15C882F8A5BDC /* Pods-AilenDBOutput-acknowledgements.markdown */,
-				0152CF079D5ECD718ED3225209E2E4CE /* Pods-AilenDBOutput-acknowledgements.plist */,
-				D670687CDBA5A537DE57459BFDF45CFA /* Pods-AilenDBOutput-dummy.m */,
-				C68DFB0E180A846FFF14C391037E9EBA /* Pods-AilenDBOutput-resources.sh */,
-				6B5F8C8A2F991330BE3CA6ED860C7C55 /* Pods-AilenDBOutput-umbrella.h */,
-				97EAF3E5EECAFB1C8CB947D3C8796EB8 /* Pods-AilenDBOutput.debug.xcconfig */,
-				3F97E631D268ABDCE067329C5BC6D19D /* Pods-AilenDBOutput.release.xcconfig */,
+				86248B27D39CC139A7CDBB6B2EDF5F22 /* Info.plist */,
+				1AEEC5B3EBD7DE3EF03D54DAC64D34A7 /* Pods-AilenDBOutput.modulemap */,
+				F64F23A84F8A3C8B0B08F5D551D8C9FF /* Pods-AilenDBOutput-acknowledgements.markdown */,
+				0FD89E5D8324D35706FF893D7E00557A /* Pods-AilenDBOutput-acknowledgements.plist */,
+				3E00BB4096C3DFFC508AD4DF57647159 /* Pods-AilenDBOutput-dummy.m */,
+				8729A08BA107EDE4CEC2A10E69B4DD6E /* Pods-AilenDBOutput-resources.sh */,
+				072328FC69A5CF835FC1078BBDCCE4E1 /* Pods-AilenDBOutput-umbrella.h */,
+				35297A24D6238F46A3DD1F5E8B578589 /* Pods-AilenDBOutput.debug.xcconfig */,
+				3F19A6F7588177D60C00472B1F25B0FC /* Pods-AilenDBOutput.release.xcconfig */,
 			);
 			name = "Pods-AilenDBOutput";
 			path = "Target Support Files/Pods-AilenDBOutput";
-			sourceTree = "<group>";
-		};
-		5AF8AD7C5A3E6378522C041F2A9A811B /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				4F7CB43711CE627FA756388C613558D0 /* Pods-AilenDBOutput */,
-			);
-			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -137,8 +186,8 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				81160E60D0F247E89410F9CF5BA2AB73 /* Pods */,
-				08A15AD64BDB02E09C67E429C7A9AEFF /* Products */,
-				5AF8AD7C5A3E6378522C041F2A9A811B /* Targets Support Files */,
+				16712295CDE8BC220A591464D5A1F4D7 /* Products */,
+				1FAC3A9BCA86A669CF261E00DABEC344 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -194,6 +243,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4A2B36A2D663F40339EF978B80C9BFCA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A6325BD13F6F5FEB6A15F93A190626D /* Pods-AilenDBOutputTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E83429AD144DF37EDABF91B9E8A4B1A1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -220,7 +277,7 @@
 			);
 			name = "Pods-AilenDBOutput";
 			productName = "Pods-AilenDBOutput";
-			productReference = DD85F923F38C1133111DC64EBB43DE76 /* Pods_AilenDBOutput.framework */;
+			productReference = DC25D99242720749BB7567585ED02007 /* Pods_AilenDBOutput.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		22BE81EF9EE70A821ED933E1D98DC575 /* Ailen */ = {
@@ -237,7 +294,25 @@
 			);
 			name = Ailen;
 			productName = Ailen;
-			productReference = FE17A443B8F8CCA706F7D34580248A7E /* Ailen.framework */;
+			productReference = 9E1CBDFD1647D9EDE3CB2D93DD536365 /* Ailen.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E85A5D79B20C1544E5C9E0B0CE785153 /* Pods-AilenDBOutputTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BD3E1B49DD974313302633BD6FB6ADF /* Build configuration list for PBXNativeTarget "Pods-AilenDBOutputTests" */;
+			buildPhases = (
+				E5E052AE73B27C9D3CFCC473FCC51485 /* Sources */,
+				26B1A186C256301F93A4CB14524E21C0 /* Frameworks */,
+				4A2B36A2D663F40339EF978B80C9BFCA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2DD600BCA0A56ACDA52EC7F28F99B99C /* PBXTargetDependency */,
+			);
+			name = "Pods-AilenDBOutputTests";
+			productName = "Pods-AilenDBOutputTests";
+			productReference = 55E79D1B41898EE23911B03150C6DCA0 /* Pods_AilenDBOutputTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -257,12 +332,13 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 08A15AD64BDB02E09C67E429C7A9AEFF /* Products */;
+			productRefGroup = 16712295CDE8BC220A591464D5A1F4D7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				22BE81EF9EE70A821ED933E1D98DC575 /* Ailen */,
 				0003515C6B1889C0FC18AC4E2461B2A7 /* Pods-AilenDBOutput */,
+				E85A5D79B20C1544E5C9E0B0CE785153 /* Pods-AilenDBOutputTests */,
 			);
 		};
 /* End PBXProject section */
@@ -292,6 +368,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E5E052AE73B27C9D3CFCC473FCC51485 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B11396634BE6100DB3A78ED9F3BF6451 /* Pods-AilenDBOutputTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -301,12 +385,18 @@
 			target = 22BE81EF9EE70A821ED933E1D98DC575 /* Ailen */;
 			targetProxy = 9891C63BB7C6A82772133DA66281B93B /* PBXContainerItemProxy */;
 		};
+		2DD600BCA0A56ACDA52EC7F28F99B99C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Ailen;
+			target = 22BE81EF9EE70A821ED933E1D98DC575 /* Ailen */;
+			targetProxy = C37F14F9ABCF1DF9EC67DEF8C961E3A7 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		11B364AE5E55ED0664188689CB46B898 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 97EAF3E5EECAFB1C8CB947D3C8796EB8 /* Pods-AilenDBOutput.debug.xcconfig */;
+			baseConfigurationReference = 35297A24D6238F46A3DD1F5E8B578589 /* Pods-AilenDBOutput.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -467,9 +557,44 @@
 			};
 			name = Release;
 		};
+		818FB88FC3F550DF44A2B1F435AB4F87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FD31B8D0986AD6D6DBFCCD32081F494 /* Pods-AilenDBOutputTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AilenDBOutputTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AilenDBOutputTests/Pods-AilenDBOutputTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		BC77BD34E45820CD918E38EA44928E88 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3F97E631D268ABDCE067329C5BC6D19D /* Pods-AilenDBOutput.release.xcconfig */;
+			baseConfigurationReference = 3F19A6F7588177D60C00472B1F25B0FC /* Pods-AilenDBOutput.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -487,6 +612,41 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-AilenDBOutput/Pods-AilenDBOutput.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D80327DAD01705483952BE8107AB6CBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6D129C7CFB0ED25D8DFE5524F16BE0C /* Pods-AilenDBOutputTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AilenDBOutputTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AilenDBOutputTests/Pods-AilenDBOutputTests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -577,6 +737,15 @@
 			buildConfigurations = (
 				11B364AE5E55ED0664188689CB46B898 /* Debug */,
 				BC77BD34E45820CD918E38EA44928E88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BD3E1B49DD974313302633BD6FB6ADF /* Build configuration list for PBXNativeTarget "Pods-AilenDBOutputTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				818FB88FC3F550DF44A2B1F435AB4F87 /* Debug */,
+				D80327DAD01705483952BE8107AB6CBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

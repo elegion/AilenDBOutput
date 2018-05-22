@@ -1,0 +1,6 @@
+framework module Pods_AilenDBOutputTests {
+  umbrella header "Pods-AilenDBOutputTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
