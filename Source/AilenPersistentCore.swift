@@ -9,7 +9,7 @@ public class AilenPersistentCore: PersistentStoreCore {
     
     // MARK: - Definitions
     
-    private struct Constants {
+    private enum Constants {
         static let dataModelName = "com.e-legion.DefaultStorageDataModel"
         static let testLaunchArguments = "com.e-legion.TestLaunchArguments"
     }
@@ -36,7 +36,7 @@ public class AilenPersistentCore: PersistentStoreCore {
         return FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).last
     }
     private lazy var parentMoc: NSManagedObjectContext = {
-        let context = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
+        let context = NSManagedObjectContext(concurrencyType: .privateQueueConcurrencyType)
         context.persistentStoreCoordinator = persistentStoreCoordinator
         return context
     }()
@@ -109,16 +109,19 @@ public class AilenPersistentCore: PersistentStoreCore {
     
     public let managedObjectModel: NSManagedObjectModel
     public let persistentStoreCoordinator: NSPersistentStoreCoordinator
+    
     public lazy var readManagedObjectContext: NSManagedObjectContext = {
-        let context = NSManagedObjectContext(concurrencyType: .privateQueueConcurrencyType)
+        let context = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
         context.parent = parentMoc
         return context
     }()
+    
     public var writeManagedObjectContext: NSManagedObjectContext {
         let context = NSManagedObjectContext(concurrencyType: .privateQueueConcurrencyType)
         context.parent = parentMoc
         return context
     }
+    
     public var currentManagedObjectContext: NSManagedObjectContext {
         return Thread.isMainThread ? readManagedObjectContext : writeManagedObjectContext
     }

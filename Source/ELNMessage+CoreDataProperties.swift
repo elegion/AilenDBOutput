@@ -17,26 +17,9 @@ extension ELNMessage {
         return NSFetchRequest<ELNMessage>(entityName: "ELNMessage")
     }
 
-    @NSManaged public var date: NSDate
+    @NSManaged public var date: Date
     @NSManaged public var payload: String
-    @NSManaged public var tag: NSSet
-    @NSManaged public var token: NSSet
+    @NSManaged public var token: String
 
 }
 
-// MARK: Generated accessors for tag
-extension ELNMessage {
-
-    @objc(addTagObject:)
-    @NSManaged public func addToTag(_ value: ELNTag)
-
-    @objc(removeTagObject:)
-    @NSManaged public func removeFromTag(_ value: ELNTag)
-
-    @objc(addTag:)
-    @NSManaged public func addToTag(_ values: NSSet)
-
-    @objc(removeTag:)
-    @NSManaged public func removeFromTag(_ values: NSSet)
-
-}

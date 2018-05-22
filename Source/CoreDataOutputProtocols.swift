@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreData
+import Ailen
 
 public protocol PersistentStoreCore {
     var managedObjectModel: NSManagedObjectModel { get }
@@ -19,25 +20,7 @@ public protocol PersistentStoreCore {
     func saveContext(_ context: NSManagedObjectContext, completion: ((Error?) -> Void)?)
 }
 
-protocol EntityDescribing {
-    static var entityName: String { get }
-}
-
-extension EntityDescribing {
-    static var entityName: String {
-        return String(describing: Self.self)
-    }
-}
-
-public struct PersistentMessage {
-    let token: String
-    let tags: [String]
-    let date: Date
-    let payload: String
-}
-
 public protocol PersistentStoraging {
-    var filter: FilterStore { get }
-    func save(_ messages: [PersistentMessage])
+    func save<TokenType: CustomStringConvertible, PayloadType: CustomStringConvertible>(_ messages: [Message<TokenType, PayloadType>])
     func deleteAll(till date: Date)
 }
