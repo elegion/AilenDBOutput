@@ -49,7 +49,8 @@ public class AilenPersistentCore: PersistentStoreCoreProtocol {
         
         var localizedDescription: String {
             switch self {
-            case .unableToLocateDataBase:                   return "Failure to instantiate data base URL"
+            case .unableToLocateDataBase:
+                return "Failure to instantiate data base URL"
             }
         }
     }

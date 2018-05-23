@@ -12,12 +12,12 @@ import CoreData
 
 class AilenPersistentCoreTests: XCTestCase {
     
-    func test_s01_tInitialization() {
+    func test_s01_initialization() {
         let core = try? AilenPersistentCore()
         XCTAssertNotNil(core)
     }
     
-    func test_s02_ReadManagedObjectContextGetter() {
+    func test_s02_readManagedObjectContextGetter() {
         guard let core = try? AilenPersistentCore() else {
             XCTAssert(false, "couldn't instatiate AilenPersistentCore")
             return
@@ -25,7 +25,7 @@ class AilenPersistentCoreTests: XCTestCase {
         XCTAssertNotNil(core.readManagedObjectContext)
     }
     
-    func test_s03_WriteManagedObjectContextGetter() {
+    func test_s03_writeManagedObjectContextGetter() {
         guard let core = try? AilenPersistentCore() else {
             XCTAssert(false, "couldn't instatiate AilenPersistentCore")
             return
@@ -33,7 +33,7 @@ class AilenPersistentCoreTests: XCTestCase {
         XCTAssertNotNil(core.writeManagedObjectContext)
     }
     
-    func test_s04_SaveContext() {
+    func test_s04_saveContext() {
         let expectation1 = expectation(description: "context saved")
         
         expectation1.expectedFulfillmentCount = 1
@@ -62,7 +62,7 @@ class AilenPersistentCoreTests: XCTestCase {
         wait(for: [expectation1], timeout: TimeInterval(5))
     }
     
-    func test_s05_ReadContext() {
+    func test_s05_readContext() {
         guard let core = try? AilenPersistentCore() else {
             XCTAssert(false, "couldn't instatiate AilenPersistentCore")
             return
