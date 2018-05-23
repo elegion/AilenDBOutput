@@ -11,16 +11,16 @@ public protocol AilenPersistentStorageDelegate: class {
     func storageDidFailFetchMessages(_ persistentStorage: AilenPersistentStorage, predicate: NSPredicate?, with error: Error)
 }
 
-public class AilenPersistentStorage: PersistentStoraging {
+public class AilenPersistentStorage: PersistentStoragingProtocol {
     
     // MARK: - Properties
     
-    private let core: PersistentStoreCore
+    private let core: PersistentStoreCoreProtocol
     public var delegate: AilenPersistentStorageDelegate?
     
     // MARK: - Life cycle
     
-    public init(core: PersistentStoreCore) {
+    public init(core: PersistentStoreCoreProtocol) {
         self.core = core
     }
     

@@ -9,21 +9,16 @@
 /* Begin PBXBuildFile section */
 		137103A65FB5782E465ADD10 /* Pods_AilenDBOutputTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE9CD02524786D5FE4F1D2D /* Pods_AilenDBOutputTests.framework */; };
 		71404295D48A8AA766611BCF /* Pods_AilenDBOutput.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C97139D0A0DC91851F838411 /* Pods_AilenDBOutput.framework */; };
+		A656EA8120B56D3B005100AD /* CoreDataOutputTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A656EA8020B56D3B005100AD /* CoreDataOutputTests.swift */; };
+		A656EA8320B56DB8005100AD /* PersistentStoragingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A656EA8220B56DB8005100AD /* PersistentStoragingProtocol.swift */; };
 		A658213420B3029D00D04038 /* AilenDBOutput.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A658212A20B3029C00D04038 /* AilenDBOutput.framework */; };
 		A658213920B3029D00D04038 /* AilenPersistentCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A658213820B3029D00D04038 /* AilenPersistentCoreTests.swift */; };
 		A658213B20B3029D00D04038 /* AilenDBOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = A658212D20B3029C00D04038 /* AilenDBOutput.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A6D0730620B3114A004D8802 /* AilenPersistentStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D072F920B31149004D8802 /* AilenPersistentStorage.swift */; };
-		A6D0730720B3114A004D8802 /* AilenPersistentStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D072F920B31149004D8802 /* AilenPersistentStorage.swift */; };
-		A6D0731220B3114A004D8802 /* ELNMessage+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D072FF20B31149004D8802 /* ELNMessage+CoreDataClass.swift */; };
-		A6D0731320B3114A004D8802 /* ELNMessage+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D072FF20B31149004D8802 /* ELNMessage+CoreDataClass.swift */; };
+		A6D0731220B3114A004D8802 /* ELNMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D072FF20B31149004D8802 /* ELNMessage.swift */; };
 		A6D0731420B3114A004D8802 /* AilenPersistentCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D0730020B31149004D8802 /* AilenPersistentCore.swift */; };
-		A6D0731520B3114A004D8802 /* AilenPersistentCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D0730020B31149004D8802 /* AilenPersistentCore.swift */; };
 		A6D0731620B3114A004D8802 /* CoreDataOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D0730120B31149004D8802 /* CoreDataOutput.swift */; };
-		A6D0731720B3114A004D8802 /* CoreDataOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D0730120B31149004D8802 /* CoreDataOutput.swift */; };
-		A6D0731A20B3114A004D8802 /* ELNMessage+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D0730320B3114A004D8802 /* ELNMessage+CoreDataProperties.swift */; };
-		A6D0731B20B3114A004D8802 /* ELNMessage+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D0730320B3114A004D8802 /* ELNMessage+CoreDataProperties.swift */; };
-		A6D0731E20B3114A004D8802 /* CoreDataOutputProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D0730520B3114A004D8802 /* CoreDataOutputProtocols.swift */; };
-		A6D0731F20B3114A004D8802 /* CoreDataOutputProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D0730520B3114A004D8802 /* CoreDataOutputProtocols.swift */; };
+		A6D0731E20B3114A004D8802 /* PersistentStoreCoreProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D0730520B3114A004D8802 /* PersistentStoreCoreProtocol.swift */; };
 		A6D0732520B45632004D8802 /* NSManagedObject+AilenDBOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D0732420B45632004D8802 /* NSManagedObject+AilenDBOutput.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +36,8 @@
 		2F828B22A059E9F9F682E0B0 /* Pods-AilenDBOutput.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AilenDBOutput.release.xcconfig"; path = "Pods/Target Support Files/Pods-AilenDBOutput/Pods-AilenDBOutput.release.xcconfig"; sourceTree = "<group>"; };
 		2FB5EFEFEA642C7A4EDFC4E9 /* Pods-AilenDBOutputTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AilenDBOutputTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AilenDBOutputTests/Pods-AilenDBOutputTests.release.xcconfig"; sourceTree = "<group>"; };
 		827D952AEAFE10049316332D /* Pods-AilenDBOutput.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AilenDBOutput.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AilenDBOutput/Pods-AilenDBOutput.debug.xcconfig"; sourceTree = "<group>"; };
+		A656EA8020B56D3B005100AD /* CoreDataOutputTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataOutputTests.swift; sourceTree = "<group>"; };
+		A656EA8220B56DB8005100AD /* PersistentStoragingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentStoragingProtocol.swift; sourceTree = "<group>"; };
 		A658212A20B3029C00D04038 /* AilenDBOutput.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AilenDBOutput.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A658212D20B3029C00D04038 /* AilenDBOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AilenDBOutput.h; sourceTree = "<group>"; };
 		A658212E20B3029C00D04038 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,11 +45,10 @@
 		A658213820B3029D00D04038 /* AilenPersistentCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AilenPersistentCoreTests.swift; sourceTree = "<group>"; };
 		A658213A20B3029D00D04038 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6D072F920B31149004D8802 /* AilenPersistentStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AilenPersistentStorage.swift; sourceTree = "<group>"; };
-		A6D072FF20B31149004D8802 /* ELNMessage+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ELNMessage+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A6D072FF20B31149004D8802 /* ELNMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELNMessage.swift; sourceTree = "<group>"; };
 		A6D0730020B31149004D8802 /* AilenPersistentCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AilenPersistentCore.swift; sourceTree = "<group>"; };
 		A6D0730120B31149004D8802 /* CoreDataOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataOutput.swift; sourceTree = "<group>"; };
-		A6D0730320B3114A004D8802 /* ELNMessage+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ELNMessage+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		A6D0730520B3114A004D8802 /* CoreDataOutputProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataOutputProtocols.swift; sourceTree = "<group>"; };
+		A6D0730520B3114A004D8802 /* PersistentStoreCoreProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistentStoreCoreProtocol.swift; sourceTree = "<group>"; };
 		A6D0732420B45632004D8802 /* NSManagedObject+AilenDBOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObject+AilenDBOutput.swift"; sourceTree = "<group>"; };
 		C97139D0A0DC91851F838411 /* Pods_AilenDBOutput.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AilenDBOutput.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCE9CD02524786D5FE4F1D2D /* Pods_AilenDBOutputTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AilenDBOutputTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				A658213820B3029D00D04038 /* AilenPersistentCoreTests.swift */,
+				A656EA8020B56D3B005100AD /* CoreDataOutputTests.swift */,
 				A658213A20B3029D00D04038 /* Info.plist */,
 			);
 			path = AilenDBOutputTests;
@@ -143,10 +140,10 @@
 			children = (
 				A6D0730020B31149004D8802 /* AilenPersistentCore.swift */,
 				A6D072F920B31149004D8802 /* AilenPersistentStorage.swift */,
-				A6D0730520B3114A004D8802 /* CoreDataOutputProtocols.swift */,
+				A6D0730520B3114A004D8802 /* PersistentStoreCoreProtocol.swift */,
+				A656EA8220B56DB8005100AD /* PersistentStoragingProtocol.swift */,
 				A6D0730120B31149004D8802 /* CoreDataOutput.swift */,
-				A6D072FF20B31149004D8802 /* ELNMessage+CoreDataClass.swift */,
-				A6D0730320B3114A004D8802 /* ELNMessage+CoreDataProperties.swift */,
+				A6D072FF20B31149004D8802 /* ELNMessage.swift */,
 				A6D0732420B45632004D8802 /* NSManagedObject+AilenDBOutput.swift */,
 			);
 			name = Code;
@@ -331,13 +328,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6D0731E20B3114A004D8802 /* CoreDataOutputProtocols.swift in Sources */,
-				A6D0731A20B3114A004D8802 /* ELNMessage+CoreDataProperties.swift in Sources */,
+				A6D0731E20B3114A004D8802 /* PersistentStoreCoreProtocol.swift in Sources */,
 				A6D0731620B3114A004D8802 /* CoreDataOutput.swift in Sources */,
 				A6D0732520B45632004D8802 /* NSManagedObject+AilenDBOutput.swift in Sources */,
 				A6D0730620B3114A004D8802 /* AilenPersistentStorage.swift in Sources */,
-				A6D0731220B3114A004D8802 /* ELNMessage+CoreDataClass.swift in Sources */,
+				A6D0731220B3114A004D8802 /* ELNMessage.swift in Sources */,
 				A6D0731420B3114A004D8802 /* AilenPersistentCore.swift in Sources */,
+				A656EA8320B56DB8005100AD /* PersistentStoragingProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,13 +342,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6D0730720B3114A004D8802 /* AilenPersistentStorage.swift in Sources */,
-				A6D0731320B3114A004D8802 /* ELNMessage+CoreDataClass.swift in Sources */,
-				A6D0731520B3114A004D8802 /* AilenPersistentCore.swift in Sources */,
-				A6D0731720B3114A004D8802 /* CoreDataOutput.swift in Sources */,
 				A658213920B3029D00D04038 /* AilenPersistentCoreTests.swift in Sources */,
-				A6D0731B20B3114A004D8802 /* ELNMessage+CoreDataProperties.swift in Sources */,
-				A6D0731F20B3114A004D8802 /* CoreDataOutputProtocols.swift in Sources */,
+				A656EA8120B56D3B005100AD /* CoreDataOutputTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,7 +493,11 @@
 				INFOPLIST_FILE = "AilenDBOutput/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.e-legion.AilenDBOutput";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -526,7 +522,11 @@
 				INFOPLIST_FILE = "AilenDBOutput/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.e-legion.AilenDBOutput";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -543,7 +543,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 96GT47C53G;
 				INFOPLIST_FILE = AilenDBOutputTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.e-legion.AilenDBOutputTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -559,7 +563,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 96GT47C53G;
 				INFOPLIST_FILE = AilenDBOutputTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.e-legion.AilenDBOutputTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

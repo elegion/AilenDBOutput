@@ -21,11 +21,11 @@ public class CoreDataOutput: DefaultOutput {
     // MARK: - Properties
     
     private let settings: Settings
-    private let persistent: PersistentStoraging
+    private let persistent: PersistentStoragingProtocol
     
     // MARK: - Life cycle
     
-    public init(settings: Settings, persistent: PersistentStoraging) {
+    public init(settings: Settings, persistent: PersistentStoragingProtocol) {
         self.settings = settings
         self.persistent = persistent
         
@@ -33,7 +33,7 @@ public class CoreDataOutput: DefaultOutput {
         
     }
     
-    public convenience init(persistent: PersistentStoraging, lifeTime: TimeInterval? = nil) {
+    public convenience init(persistent: PersistentStoragingProtocol, lifeTime: TimeInterval? = nil) {
         self.init(settings: CoreDataOutput.Settings(lifeTime: lifeTime), persistent: persistent)
     }
     

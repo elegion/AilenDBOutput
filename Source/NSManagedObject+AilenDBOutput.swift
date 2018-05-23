@@ -10,8 +10,8 @@ import CoreData
 
 extension NSManagedObject {
     
-    public static func managedObject<Result: NSManagedObject>(in context: NSManagedObjectContext) -> Result {
-        return NSEntityDescription.insertNewObject(forEntityName: self.entityName, into: context) as! Result
+    public static func managedObject<R>(in context: NSManagedObjectContext) -> R {
+        return NSEntityDescription.insertNewObject(forEntityName: self.entityName, into: context) as! R
     }
     
     public static var entityName: String {

@@ -1,41 +1,67 @@
 //
-//  Created by Evgeniy Akhmerov on 10/11/2017.
-//  Copyright © 2017 e-Legion. All rights reserved.
+//  Created by Arkady Smirnov on 5/22/18.
+//  Copyright © 2018 e-Legion. All rights reserved.
 //
 
 import CoreData
 
-public class AilenPersistentCore: PersistentStoreCore {
+public class AilenPersistentCore: PersistentStoreCoreProtocol {
+    
+    // MARK: - Static
+    
+    private static var managedObjectModel: NSManagedObjectModel {
+        let model = NSManagedObjectModel()
+        
+        let messageDescription = NSEntityDescription()
+        messageDescription.name = ELNMessage.entityName
+        messageDescription.managedObjectClassName = ELNMessage.entityName
+        
+        let dateDescription = NSAttributeDescription()
+        dateDescription.attributeType = .dateAttributeType
+        dateDescription.name = "date"
+        dateDescription.isOptional = false
+        
+        let tokenDescription = NSAttributeDescription()
+        tokenDescription.attributeType = .stringAttributeType
+        tokenDescription.name = "token"
+        tokenDescription.isOptional = false
+        
+        let payloadDescription = NSAttributeDescription()
+        payloadDescription.attributeType = .stringAttributeType
+        payloadDescription.name = "payload"
+        payloadDescription.isOptional = false
+        
+        messageDescription.properties = [dateDescription, tokenDescription, payloadDescription]
+        
+        model.entities = [messageDescription]
+        
+        return model
+    }
     
     // MARK: - Definitions
     
     private enum Constants {
-        static let dataModelName = "com.e-legion.DefaultStorageDataModel"
-        static let testLaunchArguments = "com.e-legion.TestLaunchArguments"
+        static let dataModelName = "com.e-legion.AilenPersistentCoreStorageDataModel"
     }
     
     enum StorageError: Error {
         case unableToLocateDataBase
-        case unableToLocateDataModel
-        case unableToInstantiateManagedObjectModel
-        case unableToLocateBundle
         
         var localizedDescription: String {
             switch self {
             case .unableToLocateDataBase:                   return "Failure to instantiate data base URL"
-            case .unableToLocateDataModel:                  return "Failure to instantiate data model path"
-            case .unableToInstantiateManagedObjectModel:    return "Failure to instantiate managed object model"
-            case .unableToLocateBundle:                     return "Failure to locate bundle"
             }
         }
     }
     
     // MARK: - Properties
     
+    private let persistentStoreCoordinator: NSPersistentStoreCoordinator
+    
     private var applicationDocumentsDirectory: URL? {
         return FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).last
     }
-    private lazy var parentMoc: NSManagedObjectContext = {
+    private lazy var mainMoc: NSManagedObjectContext = {
         let context = NSManagedObjectContext(concurrencyType: .privateQueueConcurrencyType)
         context.persistentStoreCoordinator = persistentStoreCoordinator
         return context
@@ -43,61 +69,29 @@ public class AilenPersistentCore: PersistentStoreCore {
     
     // MARK: - Life cycle
     
-    public init(storeURL: URL? = nil) throws {
-        let bundle: Bundle
+    public init() throws {
+
+        self.persistentStoreCoordinator = NSPersistentStoreCoordinator(managedObjectModel: AilenPersistentCore.managedObjectModel)
         
-        if ProcessInfo.processInfo.arguments.contains(Constants.testLaunchArguments) {
-            bundle = Bundle(for: AilenPersistentCore.self)
-            
-        } else {
-            let podBundle = Bundle(for: AilenPersistentCore.self)
-            guard let bundleURL = podBundle.url(forResource: "ios-logger", withExtension: "bundle"),
-                let _bundle = Bundle(url: bundleURL) else {
-                    throw StorageError.unableToLocateBundle
-            }
-            bundle = _bundle
-        }
-        
-        guard let urlString = bundle.path(forResource: Constants.dataModelName, ofType: "momd"),
-            let url = URL(string: urlString)
-            else {
-                throw StorageError.unableToLocateDataModel
-        }
-        
-        guard let mom = NSManagedObjectModel(contentsOf: url) else {
-            throw StorageError.unableToInstantiateManagedObjectModel
-        }
-        
-        self.managedObjectModel = mom
-        self.persistentStoreCoordinator = NSPersistentStoreCoordinator(managedObjectModel: self.managedObjectModel)
-        
-        let _storeURL = storeURL ?? applicationDocumentsDirectory?.appendingPathComponent(Constants.dataModelName + ".sqlite")
-        guard let storeLocation = _storeURL else {
+        let storeURL = applicationDocumentsDirectory?.appendingPathComponent(Constants.dataModelName + ".sqlite")
+        guard let storeLocation = storeURL else {
             throw StorageError.unableToLocateDataBase
         }
         
         do {
-            try setupPersistentStore(storeURL: storeLocation)
+            try persistentStoreCoordinator.addPersistentStore(ofType: NSSQLiteStoreType, configurationName: nil, at: storeLocation, options: nil)
         } catch {
-            try removePersistentModel(storeURL: storeLocation)
-            try setupPersistentStore(storeURL: storeLocation)
+            try FileManager.default.removeItem(at: storeLocation)
+            try persistentStoreCoordinator.addPersistentStore(ofType: NSSQLiteStoreType, configurationName: nil, at: storeLocation, options: nil)
         }
     }
     
     // MARK: - Private
     
-    private func setupPersistentStore(storeURL: URL) throws {
-        try persistentStoreCoordinator.addPersistentStore(ofType: NSSQLiteStoreType, configurationName: nil, at: storeURL, options: nil)
-    }
-    
-    private func removePersistentModel(storeURL: URL) throws {
-        try FileManager.default.removeItem(at: storeURL)
-    }
-    
     private func saveParentContext(completion: ((Error?) -> Void)?) {
-        parentMoc.perform {
+        mainMoc.perform {
             do {
-                try self.parentMoc.save()
+                try self.mainMoc.save()
                 completion?(nil)
             } catch {
                 completion?(error)
@@ -107,23 +101,17 @@ public class AilenPersistentCore: PersistentStoreCore {
     
     // MARK: - PersistentStoreCore
     
-    public let managedObjectModel: NSManagedObjectModel
-    public let persistentStoreCoordinator: NSPersistentStoreCoordinator
     
     public lazy var readManagedObjectContext: NSManagedObjectContext = {
         let context = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
-        context.parent = parentMoc
+        context.parent = mainMoc
         return context
     }()
     
     public var writeManagedObjectContext: NSManagedObjectContext {
         let context = NSManagedObjectContext(concurrencyType: .privateQueueConcurrencyType)
-        context.parent = parentMoc
+        context.parent = mainMoc
         return context
-    }
-    
-    public var currentManagedObjectContext: NSManagedObjectContext {
-        return Thread.isMainThread ? readManagedObjectContext : writeManagedObjectContext
     }
     
     public func saveContext(_ context: NSManagedObjectContext, completion: ((Error?) -> Void)?) {
