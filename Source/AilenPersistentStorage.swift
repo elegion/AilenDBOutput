@@ -2,7 +2,7 @@
 //  Created by Evgeniy Akhmerov on 14/12/2017.
 //  Copyright © 2017 e-Legion. All rights reserved.
 //
-
+import Foundation
 import CoreData
 import Ailen
 
@@ -25,7 +25,6 @@ public class AilenPersistentStorage: PersistentStoragingProtocol {
     }
     
     // MARK: - Private
-    
     
     private func fetchMessages(predicate: NSPredicate?, in context: NSManagedObjectContext? = nil) -> [ELNMessage]? {
         let context = context ?? core.readManagedObjectContext
@@ -68,19 +67,18 @@ public class AilenPersistentStorage: PersistentStoragingProtocol {
     
     // MARK: - PersistentStoraging
     
-    public func save<TokenType: CustomStringConvertible, PayloadType: CustomStringConvertible>(_ messages: [Message<TokenType, PayloadType>]) {
+    public func save(token: String, payload: Codable) {
+        
+        guard let payloadStirng = payload.getJSONString() else {
+            return
+        }
+        
         let context = core.writeManagedObjectContext
         
-        messages.forEach {
-            (current) in
-           
-            let messageObj: ELNMessage = ELNMessage.managedObject(in: context)
-            
-            messageObj.token = current.token.description
-            
-            messageObj.date = Date()
-            messageObj.payload = current.payload.description
-        }
+        let messageObj: ELNMessage = ELNMessage.managedObject(in: context)
+        messageObj.token = token
+        messageObj.date = Date()
+        messageObj.payload = payloadStirng
         
         core.saveContext(context) {
             [weak self] (error) in
@@ -94,5 +92,17 @@ public class AilenPersistentStorage: PersistentStoragingProtocol {
         let predicate = NSPredicate(format: "date < %@", argumentArray: [date])
         
         removeMessages(predicate: predicate)
+    }
+}
+
+private extension Encodable {
+    func getJSONString() -> String? {
+        let encoder = JSONEncoder()
+        encoder.outputFormatting = .prettyPrinted
+        if let data = try? encoder.encode(self) {
+            return String(data: data, encoding: .utf8)
+        } else {
+            return nil
+        }
     }
 }

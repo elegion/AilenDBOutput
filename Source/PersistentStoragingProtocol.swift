@@ -10,6 +10,6 @@ import Foundation
 import Ailen
 
 public protocol PersistentStoragingProtocol {
-    func save<TokenType: CustomStringConvertible, PayloadType: CustomStringConvertible>(_ messages: [Message<TokenType, PayloadType>])
+    func save(token: String, payload: Codable)
     func deleteAll(till date: Date)
 }

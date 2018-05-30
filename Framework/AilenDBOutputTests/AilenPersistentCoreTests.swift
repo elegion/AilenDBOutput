@@ -19,7 +19,7 @@ class AilenPersistentCoreTests: XCTestCase {
     
     func test_s02_readManagedObjectContextGetter() {
         guard let core = try? AilenPersistentCore() else {
-            XCTAssert(false, "couldn't instatiate AilenPersistentCore")
+            XCTFail("couldn't instatiate AilenPersistentCore")
             return
         }
         XCTAssertNotNil(core.readManagedObjectContext)
@@ -27,7 +27,7 @@ class AilenPersistentCoreTests: XCTestCase {
     
     func test_s03_writeManagedObjectContextGetter() {
         guard let core = try? AilenPersistentCore() else {
-            XCTAssert(false, "couldn't instatiate AilenPersistentCore")
+            XCTFail("couldn't instatiate AilenPersistentCore")
             return
         }
         XCTAssertNotNil(core.writeManagedObjectContext)
@@ -39,7 +39,7 @@ class AilenPersistentCoreTests: XCTestCase {
         expectation1.expectedFulfillmentCount = 1
         
         guard let core = try? AilenPersistentCore() else {
-            XCTAssert(false, "couldn't instatiate AilenPersistentCore")
+            XCTFail("couldn't instatiate AilenPersistentCore")
             return
         }
         
@@ -55,7 +55,7 @@ class AilenPersistentCoreTests: XCTestCase {
         core.saveContext(context, completion: {
             error in
             if let error = error {
-                XCTAssert(false, "saveContext throws \(error.localizedDescription)")
+                XCTFail("saveContext throws \(error.localizedDescription)")
             }
             expectation1.fulfill()
         })
@@ -64,7 +64,7 @@ class AilenPersistentCoreTests: XCTestCase {
     
     func test_s05_readContext() {
         guard let core = try? AilenPersistentCore() else {
-            XCTAssert(false, "couldn't instatiate AilenPersistentCore")
+            XCTFail("couldn't instatiate AilenPersistentCore")
             return
         }
         
@@ -75,7 +75,7 @@ class AilenPersistentCoreTests: XCTestCase {
             let result = try readContext.fetch(messagesFetch)
             XCTAssert(!result.isEmpty, "result of fetching is empty")
         } catch {
-            XCTAssert(false, "readContext throws \(error.localizedDescription)")
+            XCTFail("readContext throws \(error.localizedDescription)")
         }
     }
     

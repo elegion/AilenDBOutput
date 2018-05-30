@@ -39,12 +39,18 @@ public class CoreDataOutput: DefaultOutput {
     
     // MARK: - Output
     
-    open override func display<TokenType: CustomStringConvertible, PayloadType: CustomStringConvertible>(_ message: Message<TokenType, PayloadType>) {
+    open override func display<TokenType, PayloadType>(_ message: Message<TokenType, PayloadType>) {
         if let lifeTimeInterval = settings.lifeTime {
             let tillDate = Date(timeInterval: -lifeTimeInterval, since: Date())
             persistent.deleteAll(till: tillDate)
         }
-        persistent.save([message])
+        
+        guard let payload = message.payload as? Codable else {
+            print("message.payload \(message.payload) must be Codable")
+            return
+        }
+        
+        persistent.save(token: message.token.rawValue, payload: payload)
     }
 
 }

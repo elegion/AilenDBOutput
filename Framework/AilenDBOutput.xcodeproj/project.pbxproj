@@ -14,6 +14,7 @@
 		A658213420B3029D00D04038 /* AilenDBOutput.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A658212A20B3029C00D04038 /* AilenDBOutput.framework */; };
 		A658213920B3029D00D04038 /* AilenPersistentCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A658213820B3029D00D04038 /* AilenPersistentCoreTests.swift */; };
 		A658213B20B3029D00D04038 /* AilenDBOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = A658212D20B3029C00D04038 /* AilenDBOutput.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A6C8D63D20BED64F00D7B816 /* AilenPersistentStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8D63C20BED64F00D7B816 /* AilenPersistentStorageTests.swift */; };
 		A6D0730620B3114A004D8802 /* AilenPersistentStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D072F920B31149004D8802 /* AilenPersistentStorage.swift */; };
 		A6D0731220B3114A004D8802 /* ELNMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D072FF20B31149004D8802 /* ELNMessage.swift */; };
 		A6D0731420B3114A004D8802 /* AilenPersistentCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D0730020B31149004D8802 /* AilenPersistentCore.swift */; };
@@ -44,6 +45,7 @@
 		A658213320B3029D00D04038 /* AilenDBOutputTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AilenDBOutputTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A658213820B3029D00D04038 /* AilenPersistentCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AilenPersistentCoreTests.swift; sourceTree = "<group>"; };
 		A658213A20B3029D00D04038 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6C8D63C20BED64F00D7B816 /* AilenPersistentStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AilenPersistentStorageTests.swift; sourceTree = "<group>"; };
 		A6D072F920B31149004D8802 /* AilenPersistentStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AilenPersistentStorage.swift; sourceTree = "<group>"; };
 		A6D072FF20B31149004D8802 /* ELNMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELNMessage.swift; sourceTree = "<group>"; };
 		A6D0730020B31149004D8802 /* AilenPersistentCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AilenPersistentCore.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				A658213820B3029D00D04038 /* AilenPersistentCoreTests.swift */,
+				A6C8D63C20BED64F00D7B816 /* AilenPersistentStorageTests.swift */,
 				A656EA8020B56D3B005100AD /* CoreDataOutputTests.swift */,
 				A658213A20B3029D00D04038 /* Info.plist */,
 			);
@@ -342,6 +345,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6C8D63D20BED64F00D7B816 /* AilenPersistentStorageTests.swift in Sources */,
 				A658213920B3029D00D04038 /* AilenPersistentCoreTests.swift in Sources */,
 				A656EA8120B56D3B005100AD /* CoreDataOutputTests.swift in Sources */,
 			);

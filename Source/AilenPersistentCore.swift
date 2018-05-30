@@ -7,36 +7,6 @@ import CoreData
 
 public class AilenPersistentCore: PersistentStoreCoreProtocol {
     
-    // MARK: - Static
-    
-    private static var managedObjectModel: NSManagedObjectModel {
-        let model = NSManagedObjectModel()
-        
-        let messageDescription = NSEntityDescription()
-        messageDescription.name = ELNMessage.entityName
-        messageDescription.managedObjectClassName = ELNMessage.entityName
-        
-        let dateDescription = NSAttributeDescription()
-        dateDescription.attributeType = .dateAttributeType
-        dateDescription.name = "date"
-        dateDescription.isOptional = false
-        
-        let tokenDescription = NSAttributeDescription()
-        tokenDescription.attributeType = .stringAttributeType
-        tokenDescription.name = "token"
-        tokenDescription.isOptional = false
-        
-        let payloadDescription = NSAttributeDescription()
-        payloadDescription.attributeType = .stringAttributeType
-        payloadDescription.name = "payload"
-        payloadDescription.isOptional = false
-        
-        messageDescription.properties = [dateDescription, tokenDescription, payloadDescription]
-        
-        model.entities = [messageDescription]
-        
-        return model
-    }
     
     // MARK: - Definitions
     
