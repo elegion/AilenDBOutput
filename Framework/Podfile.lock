@@ -1,16 +1,16 @@
 PODS:
-  - Ailen (0.0.1.alpha.3)
+  - Ailen (0.0.1.alpha.4)
 
 DEPENDENCIES:
-  - Ailen (= 0.0.1.alpha.3)
+  - Ailen (= 0.0.1.alpha.4)
 
 SPEC REPOS:
   https://github.com/elegion/ios-podspecs.git:
     - Ailen
 
 SPEC CHECKSUMS:
-  Ailen: fc5ff33678599fc9a033a910a56a404d63569e83
+  Ailen: e14cee0ca3598ec5fd68152c0772895ef8027bad
 
-PODFILE CHECKSUM: bb8b5dea2d459bdb51401af989fed9c2e7103639
+PODFILE CHECKSUM: ebee5342e361ace4ff0a25c91cd21415ab4c8dd9
 
 COCOAPODS: 1.5.0

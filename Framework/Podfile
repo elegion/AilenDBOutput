@@ -5,7 +5,7 @@ platform :ios, '9.0'
 source 'https://github.com/elegion/ios-podspecs.git'
 
 def pod_list
-    pod 'Ailen', '0.0.1.alpha.3'
+    pod 'Ailen', '0.0.1.alpha.4'
 end
 
 target 'AilenDBOutput' do
